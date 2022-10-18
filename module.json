@@ -1,0 +1,101 @@
+{
+  "id": "ActiveAuras",
+  "title": "Active-Auras",
+  "description": "Active-Auras",
+  "authors": [{
+    "name": "Kandashi"
+  }],
+  "url": "https://github.com/kandashi/Active-Auras",
+  "bugs": "https://github.com/kandashi/Active-Auras/issues",
+  "flags": {},
+  "version": "0.4.0",
+  "compatibility": {
+    "minimum": 10,
+    "verified": 10
+  },
+  "scripts": [
+    "src/aura.js",
+    "src/AAhelpers.js",
+    "src/AAhooks.js",
+    "src/AAhtml.js",
+    "src/collateAuras.js",
+    "src/measureDistances.js",
+    "src/settings.js",
+    "src/templateDetection.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "lang/ko.json"
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/ja.json"
+    },
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "zh-tw",
+      "name": "正體中文",
+      "path": "lang/zh-tw.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "Active Auras Auras",
+      "label": "Active Auras Auras",
+      "path": "packs/AuraItems",
+      "type": "Item",
+      "module": "ActiveAuras",
+      "private": false,
+      "system" : "dnd5e"
+    },
+    {
+      "name": "Active Auras Zone Actors",
+      "label": "Active Auras Zone Actors",
+      "path": "packs/ZoneActors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "module": "ActiveAuras",
+      "private": false
+    },
+    {
+      "name": "Active Auras Macros",
+      "label": "Active Auras Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "module": "ActiveAuras",
+      "private": false
+    }
+  ],
+  "relationships": {
+    "requires" : [
+      {
+        "id": "socketlib"
+      },
+      {
+        "id": "lib-wrapper"
+      }
+    ]
+  },
+  "socket": true,
+  "manifest": "https://raw.githubusercontent.com/SecretSquirrel77/Active-Auras-PR/main/module.json",
+  "download": "https://github.com/kandashi/Active-Auras/archive/main.zip",
+  "protected": false,
+  "coreTranslation": false
+}
